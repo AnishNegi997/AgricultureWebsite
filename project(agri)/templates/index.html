@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <title>Agri-Soluions</title>
+
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="wrapper">
+        <div class="main-header">
+          <div class="main-header1">
+            <div class="tree">
+              <i class="fas fa-tree" style="color: #20cb34"></i>
+            </div>
+  
+            <h2>Agri-Solutions</h2>
+          </div>
+  
+          <div class="main-header2">
+            <div class="info2">
+              <p>
+                <i class="fas fa-mobile" style="color: #21e839"></i>(1123) 224 366
+                <br />
+                info@agrisolutions.com
+              </p>
+            </div>
+  
+            <div class="info3">
+              <p>
+                <i class="far fa-clock" style="color: #11ee1f"></i>6 hours - 21
+                hours
+                <br />
+                *Weekends working
+              </p>
+            </div>
+
+            <div class="info1">
+              <!-- translator script -->
+              <div id="google_element"></div>
+               <script>
+                 function loadGoogleTranslate()
+              {
+                new google.translate.TranslateElement("google_element")
+              }
+               </script>
+               <!--       -->
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="header">
+        <div class="navbar">
+          <a class="active" href="{{url_for('index')}}" >Home</a>
+          <a href="{{url_for('news')}}">News</a>
+          <a href="{{url_for('crop_prediction')}}">Crop Prediction</a>
+          <a href="{{url_for('about')}}">About</a>
+          <a href="#Shop">Shop</a>
+          <a href="#Shop Details">Shop Details</a>
+          <a href="#Blog">Blog</a>
+          <a href="#Gallery">Gallery</a>
+          <a href="#Contact">Contact</a>
+          <a href="#Dropdown">Dropdown &#9660;</a>
+        </div>
+      </div>
+      <div class="weatherwidget">
+        <a
+          class="weatherwidget-io"
+          href="https://forecast7.com/en/30d3278d03/dehradun/"
+          data-label_1="DEHRADUN"
+          data-label_2="WEATHER"
+          data-font="Verdana"
+          data-icons="Climacons Animated"
+          data-theme="fall-leaves"
+          >DEHRADUN WEATHER</a
+        >
+        <script>
+          !(function (d, s, id) {
+            var js,
+              fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+              js = d.createElement(s);
+              js.id = id;
+              js.src = "https://weatherwidget.io/js/widget.min.js";
+              fjs.parentNode.insertBefore(js, fjs);
+            }
+          })(document, "script", "weatherwidget-io-js");
+        </script>
+      </div>
+    
+      <!-- Slider main container -->
+     <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/static/images/img1.jpg" alt="image1">
+        </div>
+        <div class="swiper-slide">
+          <img src="/static/images/img2.jpg" alt="image2">
+        </div>
+        <div class="swiper-slide">
+          <img src="/static/images/img3.png" alt="image3"></div>
+        <div class="swiper-slide">
+          <img src="/static/images/img4.jpg" alt="image4">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  
+  <div class="middle">
+    <h3>Step into the World of Organics!</h3>
+    <h2>Let the first step be firmly anchored</h2>
+    <p>
+      <br>
+      Organic farming offers an alternative agricultural system. It initially began in the early in the 20th century. The advent of
+  pesticides brought in its benefits and pitfalls simultaneously. It is more healthy relying on compost manure, green
+  manure, and bone meal.
+    </p>
+    <div class="big-box">
+    <div class="box">
+      <img src="/static/images/middlebox/soil.webp" alt="img_box1" class="img_box">
+      <h3>Organic Farming</h3>
+      <p>
+        Organic agriculture is a production system that sustains the health of soils, ecosystems and people. It relies on ecological processes, biodiversity and cycles adapted to local conditions, rather than the use of inputs with adverse effects.
+      </p>
+    </div>
+    <div class="box">
+      <img src="/static/images/middlebox/biodiversity.jpg" alt="img_box2" class="img_box">
+      <h3>Increased Biodiversity</h3>
+      <p>
+        Planting crop mixtures and varieties and beneficial flowers, perennials, hedgerows, and even leaving some areas uncultivated can increase diversity. This effectively boosts biodiversity. Further, if you add native plants near your crops, you can invite pollinators, which help your crops grow.
+      </p>
+  
+    </div>
+    <div class="box">
+      <img src="/static/images/middlebox/tractor.webp" alt="img_box3" class="img_box">
+      <h3>Interdependent Culture</h3>
+      <p>
+        Interdependent agriculture refers to the interdependence of agriculture and industry. The products of one sector serve as important inputs for the other, and the growth of one sector means ample supply of inputs for the other. 
+      </p>
+  </div>
+  </div>
+  
+  <div class="middle2">
+    <div class="assistance">
+   <p>
+    Call Us for any Queries <br>
+     <a href="tel:+" style="text-decoration: none;">+917895025313</a>
+   </p>
+    </div>
+    <img src="/static/images/middlebox2/assist.png" alt="middle-box2" class="img-box2">
+  </div>
+  
+  <div class="blog">
+    <br>
+    <h4>All News Around Us</h4>
+    <h3>Our Blog</h3>
+  
+  <div class="container">
+  <div class="card">
+      <img src="/static/images/blogcard/image1.webp" alt="image1">
+      <br>
+      <h4>Gallery with Images</h4>
+      <br>
+      <p>Check Our Image gallery for more about our work.</p>
+      <br>
+      <button>Click Here</button>
+  </div>
+    <div class="card">
+      <img src="/static/images/blogcard/image2.jpg" alt="image2">
+      <br>
+      <h4>Fullwidth Image Post</h4>
+      <br>
+      <p>Check Our recent posts with images for our work.</p>
+      <br>
+      <button>Click Here</button>
+  </div>
+    <div class="card">
+      <img src="/static/images/blogcard/image3.jpg" alt="image3">
+      <br>
+      <h4>Latest News Reports</h4>
+      <br>
+      <p>Subscribe us for latest news reports</p>
+      <br>
+      <button>Click Here</button>
+  </div>
+    </div>
+  </div>
+  
+  <div class="donation-box">
+    <div class="leaf">
+      <img src="/static/images/donationBox/COW.jpg" alt="cow">
+    </div>
+    <div class="donation">
+      <h4>Call Back</h4>
+      <h3><span style="color: #0e7e16;">Donation </span>Request</h3>
+      <p>As a agricultural organization , we provide suitable help for farmers by donating them seeds,fertilizers and other necessary requirements.</p>
+      <br>
+      <form>
+        <input type="number" name="amount" id="amount" placeholder="Amount" min="0">
+        <input type="email" name="e-mail" id="e-mail" placeholder="e-mail">
+        <br>
+        <input type="text" name="Name" id="Name" placeholder="Full Name">
+        <input type="tel" name="telephone" id="telephone" placeholder="Phone">
+        <br>
+        <textarea name="textbox" id="textbox" cols="30" rows="10" placeholder="Message"></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
+  </div>
+   <div class="middle3">
+    <img src="/static/images/middle3/img1.jpg" alt="middle3image">
+    <div class="middle3-content">
+      <section class="section1">
+        <h4>What Inspire us ?</h4>
+        <h3>Smiles <section style="display: inline; color: black;">are true testinomials!</section></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis eos reiciendis expedita odio cumque cupiditate a sunt maiores quibusdam iusto tempore, ipsa odit esse sit modi. Nihil, nam quis!</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sapiente architecto delectus facere perferendis voluptas hic saepe sint expedita nobis eius, eum facilis repellendus laborum quidem odit doloribus eaque excepturi?</p>
+      </section>
+      <section class="section2">
+       <p>
+        <i class="far fa-square-plus"></i>
+        <h4 style="display:inline;"></i>Healthy Products </h4><br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, illo?
+       
+       </p>
+       <p><i class="far fa-clock"></i>
+        <h4 style="display: inline;">Garden Frest Fruits </h4><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, delectus.
+       </p>
+      </section>
+      <section class="section3">
+        <p><i class="far fa-heart"></i>
+          <h4 style="display: inline;">Biodiversity </h4><br>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illum.
+        </p>
+        <p><i class="fab fa-pagelines"></i>
+          Soil Enrichment <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, officia.
+      </p>
+      </section>
+    </div>
+   </div>
+    <div class="middle4">
+      <img src="/static/images/collage photo/images.jpg" alt="image-collage">
+    </div>
+    <footer>
+      <div class="foot-panel1">
+          Back to Top
+      </div>
+      <div class="foot-panel2">
+          <ul>
+              <p>Get to know us</p>
+              <a>About Us</a>
+              <a>Careers</a>
+              <a>Press Releases</a>
+              <a>Agri-Soluions</a>
+          </ul>
+          <ul>
+              <p>Get to know us</p>
+              <a>About Us</a>
+              <a>Careers</a>
+              <a>Press Releases</a>
+              <a>Agri-Soluions</a>
+          </ul>
+          <ul>
+              <p>Get to know us</p>
+              <a>About Us</a>
+              <a>Careers</a>
+              <a>Press Releases</a>
+              <a>Agri-Soluions</a>
+          </ul>
+          <ul>
+              <p>Get to know us</p>
+              <a>About Us</a>
+              <a>Careers</a>
+              <a>Press Releases</a>
+              <a>Agri-Soluions</a>
+          </ul>
+      </div>
+      <div class="foot-panel4">
+          <div class="pages">
+              <a>Condition of Use</a>
+              <a>Privacy Notice</a>
+              <a>Your Ads Privacy Choices</a>
+          </div>
+          <div class="copyright">© 1996-2023, Agri-Soluions.com, Inc. or its affiliates</div>
+      </div>
+  </footer>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+  <script src="/static/script.js"></script>
+  </body>
+</html>

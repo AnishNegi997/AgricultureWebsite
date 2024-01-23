@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+    <link rel="stylesheet" href="/static/news.css">
+</head>
+<body>
+
+    <div id="main">
+
+        <div class="wrapper">
+            <div class="main-header">
+              <div class="main-header1">
+                <div class="tree">
+                  <i class="fas fa-tree" style="color: #20cb34"></i>
+                </div>
+      
+                <h2>Agri-Solutions</h2>
+              </div>
+      
+              <div class="main-header2">
+                <div class="info2">
+                  <p>
+                    <i class="fas fa-mobile" style="color: #21e839"></i>(1123) 224 366
+                    <br />
+                    info@organicfarming.com
+                  </p>
+                </div>
+      
+                <div class="info3">
+                  <p>
+                    <i class="far fa-clock" style="color: #11ee1f"></i>6 hours - 21
+                    hours
+                    <br />
+                    *Weekends working
+                  </p>
+                </div>
+
+                <div class="info1">
+                    <!-- translator script -->
+                    <div id="google_element"></div>
+                     <script>
+                       function loadGoogleTranslate()
+                    {
+                      new google.translate.TranslateElement("google_element")
+                    }
+                     </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="header">
+            <div class="navbar">
+              <a href="{{url_for('index')}}">Home</a>
+              <a class="active" href="{{url_for('news')}}">News</a>
+              <a href="{{url_for('crop_prediction')}}">Crop Prediction</a>
+              <a href="{{url_for('about')}}">About</a>
+              <a href="#Shop">Shop</a>
+              <a href="#Shop Details">Shop Details</a>
+              <a href="#Blog">Blog</a>
+              <a href="#Gallery">Gallery</a>
+              <a href="#Contact">Contact</a>
+              <a href="#Dropdown">Dropdown &#9660;</a>
+            </div>
+          </div>
+
+        <iframe class="news" src="https://agriculturepost.com/" frameborder="0"></iframe>
+    </div>
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+</body>
+</html>

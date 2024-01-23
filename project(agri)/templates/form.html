@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop_Prediction</title>
+ <link rel="stylesheet" href="/static/formstyle.css">
+</head>
+<body>
+<div class="main">
+    <div class="wrapper">
+        <div class="main-header">
+          <div class="main-header1">
+            <div class="tree">
+              <i class="fas fa-tree" style="color: #20cb34"></i>
+            </div>
+  
+            <h2>Agri-Solutions</h2>
+          </div>
+  
+          <div class="main-header2">
+            <div class="info2">
+              <p>
+                <i class="fas fa-mobile" style="color: #21e839"></i>(1123) 224 366
+                <br />
+                info@organicfarming.com
+              </p>
+            </div>
+  
+            <div class="info3">
+              <p>
+                <i class="far fa-clock" style="color: #11ee1f"></i>6 hours - 21
+                hours
+                <br />
+                *Weekends working
+              </p>
+            </div>
+
+            <div class="info1">
+              <!-- translator script -->
+              <div id="google_element"></div>
+               <script>
+                 function loadGoogleTranslate()
+              {
+                new google.translate.TranslateElement("google_element")
+              }
+               </script>
+               <!--       -->
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="header">
+        <div class="navbar">
+          <a href="{{url_for('index')}}" >Home</a>
+          <a href="{{url_for('news')}}">News</a>
+          <a class="active" href="{{url_for('crop_prediction')}}">Crop Prediction</a>
+          <a href="{{url_for('about')}}">About</a>
+          <a href="#Shop">Shop</a>
+          <a href="#Shop Details">Shop Details</a>
+          <a href="#Blog">Blog</a>
+          <a href="#Gallery">Gallery</a>
+          <a href="#Contact">Contact</a>
+          <a href="#Dropdown">Dropdown &#9660;</a>
+        </div>
+      </div>
+    <img src="/static/images/background.jpg" alt="background-image" style="height: 100%;width: 100%;">
+    <form action="form" method="post">
+        
+        <h2 style="color: green;">Crop Prediction System</h2>
+        <br>
+        <label for="nitrogen">Nitrogen:</label>
+        <input type="text" name="Nitrogen" id="Nitrogen" placeholder="Nitrogen" min="0" max="100" required>
+       <br>
+        <label for="phosphorus">Phosphorus:</label>
+        <input type="text" name="Phosphorus" id="Phosphorus" placeholder="Phosphorus" min="0" max="100" required>
+       <br>
+        <label for="potassium">Potassium:</label>
+        <input type="text" name="Potassium" id="Potassium" placeholder="Potassium" min="0" max="100" required>
+       <br>
+        <label for="temperature">Temperature:</label>
+        <input type="text" name="Temperature" id="Temperature" placeholder="Temperature deg. Celcius" min="0" max="100" required>
+       <br>
+        <label for="humidity">Humidity:</label>
+        <input type="text" name="Humidity" id="Humidity" placeholder="Humidity %" min="0" max="100" required>
+       <br>
+        <label for="ph">PH:</label>
+        <input type="text" name="PH" id="PH" placeholder="PH(0-14)" min="0" max="14" required>
+        <br>
+        <label for="Rainfall">Rainfall:</label>
+        <input type="text" name="Rainfall" id="Rainfall" placeholder="Rainfall(mm)" min="0" max="10000" required>
+      <br>
+       <input type="submit" id="submit" value="Predict">
+    </form>
+</div>
+<script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+</body>
+</html>
